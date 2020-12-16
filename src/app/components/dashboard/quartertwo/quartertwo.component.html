@@ -1,0 +1,16 @@
+<a>test</a>
+<li *ngFor="let groceryItem of groceryItems | async"> 
+    <!-- <a [routerLink]="['/image', img.id]">     -->
+        <img src="{{groceryItem.downloadURL}}"
+       class="img" width="500" height="500" href="#" download="{{groceryItem.downloadURL}}">>    
+       <a href="#" download="{{groceryItem.downloadURL}}"> Download Image </a>
+   <!-- <img src="{{groceryItem.downloadURL}}"
+       class="img" width="500" height="500">     -->
+      
+      
+      <!-- <a href="{{groceryItem.downloadURL}}"  (click)="download()">Download</a> -->
+       <!-- <input type="button" (click)="download()" value="Download Employee Data"/>
+       <a [href]="groceryItem.downloadURL | async">{{ groceryItem.downloadURL | async }} </a>
+
+     -->
+  </li>    
